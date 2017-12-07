@@ -66,9 +66,9 @@
 		?>
 	<div style="width:100%; height: 100px; background-color: yellowgreen; display: flex; flex-direction: column; align-items: center;">
 	<?php
-		echo "<div style='width: 100%; height: 50px; background-color: blue;'>";
+		// echo "<div style='width: 100%; height: 50px; background-color: blue;'>";
 		echo " your name is : $name </br>";
-		echo "</div>";
+		// echo "</div>";
 		echo "your password is : $password </br>";
 		echo "your email id is : $email </br>";
 	}

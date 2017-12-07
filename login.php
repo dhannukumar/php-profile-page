@@ -76,23 +76,29 @@
         
         <?php
         
-        if(!isset ($_POST['login'])){
+        if(!isset ($_POST['submit'])){
+            
         ?>
         
         
         <div class="main">
-    <div id="container">
-        <h1>LOGIN</h1>
-        </div>
+            <div id="container">
+                <h1>LOGIN</h1>
+            </div>
             <div class="contain"></div>
 			
-        <div class="container2">
+            <div class="container2">
         <form action="#" method="post">
-        <input type="text" class="one" name="email" placeholder="Your Email id">
+        
+            <input type="text" class="one" name="email" placeholder="Your Email id">
+                <br><br>
+            <input type="password" class="one" name="password" placeholder="PASSWORD">
             <br><br>
-        <input type="text" class="one" name="password" placeholder="PASSWORD">
-        <br><br>
-        <div class="container3" name="login">LOGIN</div></form>
+            <!-- <div class="container3" name="login">LOGIN</div> -->
+            <input type="submit" class="container3" name="submit"><br>
+            
+
+        </form>
 			
             <br>
             <a>Forgot your password?</a>
@@ -105,8 +111,8 @@
         else {
             $emai = $_POST['email'];
             $pass = $_POST['password'];
-              ?>
-		<?php
+
+
              echo "Hi Friends your Email Id; $emai<br> ";
              echo "Hi Friends your password; $pass<br>";
         }
